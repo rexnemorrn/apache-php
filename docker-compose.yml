@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  asir_apache:
+    image: php:apache 
+    container_name: asir_apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html  
